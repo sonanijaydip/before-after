@@ -1,0 +1,98 @@
+.radhe{
+    /* margin: 0; */
+    /* padding: 0; */
+    padding: 20px 40px;
+    margin: 100px auto;
+    color: blue;
+    position: relative;
+    background-color: black;
+}
+.radhe::before{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: brown;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .5s;
+    transform: scale(0);
+}
+.radhe:hover::before{
+    /* width: 100%; */
+    height: 5px;
+    transform: scale(1);
+}
+.krishna{
+    padding: 20px 40px;
+    border: none;
+    /* margin: 100px 200px; */
+    background-color: blue;
+    color: rgb(219, 211, 238);
+    position: relative;
+
+}
+.krishna:after{
+    content: '';
+    height: 100%;
+    width: 0;
+    background-color: rgb(180, 28, 28);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+
+}
+.krishna span{
+    z-index: 1;
+    position: relative;
+}
+.krishna:hover::after{
+    width: 100%;
+    /* transform: rotate(360deg); */
+}
+.shree{
+    padding: 20px 40px;
+    border: none;
+    background-color: aqua;
+    position: relative;
+
+}
+ /* .shree::before{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 45px transparent solid;
+    border-right: 45px transparent solid;
+    border-bottom: 90px black solid;
+    position: absolute;
+    top: 0;
+    right: 30px;
+}  */
+/* .shape{
+    height: 0;
+    width: 0;
+    border-left: 30px transparent solid;
+    border-right: 30px transparent solid;
+    border-bottom: 50px red solid;
+} */
+.shree::after{
+    content: '';
+    height: 0;
+    width: 100%;
+    border-top: 28px transparent solid;
+    border-bottom: 28px transparent solid;
+    border-left: 40px aqua solid;
+    position: absolute;
+    top: 0;
+    right: -40px;
+    transition: .3s;
+    z-index: -1;
+}
+.shree:hover::after{
+    width: 0%;    
+}
+.shree span{
+    position: relative;
+    z-index: 1;
+}
